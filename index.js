@@ -8,6 +8,10 @@ app.get("/sitemap.xml", (req, res) =>
   res.sendFile("sitemap.xml", { root: __dirname })
 );
 
+app.get("/robots.txt", (req, res) =>
+  res.sendFile("robots.txt", { root: __dirname })
+);
+
 app.get("/drip-ios", function(req, res) {
   const file = path.join(__dirname, "/upload/latest-ios.ipa");
   res.download(file, "latest-ios.ipa", e =>
