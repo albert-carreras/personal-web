@@ -4,6 +4,9 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => res.sendFile("index.html", { root: __dirname }));
+app.get("/sitemap.xml", (req, res) =>
+  res.sendFile("sitemap.xml", { root: __dirname })
+);
 
 app.get("/drip-ios", function(req, res) {
   const file = path.join(__dirname, "/upload/latest-ios.ipa");
