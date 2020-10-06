@@ -1,7 +1,11 @@
 const express = require("express");
 const path = require("path");
+const helmet = require('helmet');
+
 const app = express();
 const port = 3000;
+
+app.use(helmet());
 
 app.get("/", (req, res) => res.sendFile("index.html", { root: __dirname }));
 app.get("/sitemap.xml", (req, res) =>
