@@ -20,18 +20,4 @@ app.get("/cv", (req, res) =>
   res.sendFile("cv.pdf", { root: __dirname })
 );
 
-app.get("/drip-ios", function(req, res) {
-  const file = path.join(__dirname, "/upload/latest-ios.ipa");
-  res.download(file, "latest-ios.ipa", e =>
-    res.send(`Nothing to download yet: ${e}`)
-  );
-});
-
-app.get("/drip-android", function(req, res) {
-  const file = path.join(__dirname, "/upload/latest-android.apk");
-  res.download(file, "latest-android.apk", () =>
-    res.send(`Nothing to download yet: ${e}`)
-  );
-});
-
 app.listen(port);
