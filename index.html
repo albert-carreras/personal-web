@@ -1,6 +1,9 @@
 <style>
+  body {
+    margin: 20px;
+  }
   p {
-    line-height: 0.6;
+    line-height: 0.8;
     display: block;
     font-family: monospace;
     white-space: pre;
@@ -8,21 +11,39 @@
     padding: 0 !important;
     word-wrap: break-word;
     white-space: pre-wrap;
+    font-size: 12px;
   }
+    @media only screen and (max-width: 600px) {
+        p {
+            font-size: 11px;
+        }
+    @media only screen and (max-width: 535px) {
+      p {
+        line-height: 1.4;
+      }
+    }
 </style>
 <html lang="en">
   <head>
-    <title>Albert Carreras - Engineering Manager</title>
-    <link
-    crossorigin="anonymous"
-      rel="icon"
-      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/236/cat-face-with-wry-smile_1f63c.png"
-    />
-    <meta
-      name="description"
-      content="Hi, I’m Albert Carreras.
-    An Engineering Manager based in Amsterdam. I also made a journaling app, Seren"
-    />
+    <meta charset="UTF-8">
+    <title>Albert Carreras - Full-Stack Developer & Engineering Manager in Amsterdam</title>
+    <meta name="description" content="Albert Carreras, an innovative Engineering Manager and Full-Stack Developer based in Amsterdam. Discover my work on Seren: AI Chat Journal and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/twitter/236/cat-face-with-wry-smile_1f63c.png" alt="Albert Carreras Favicon">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Albert Carreras",
+        "jobTitle": "Engineering Manager & Full-Stack Developer",
+        "affiliation": "Triskale",
+        "url": "https://www.yourwebsite.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/albcarreras/"
+        ]
+    }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -39,12 +60,35 @@
     </script>
   </head>
   <body>
-    <p>{</p>
-    <p>
-      "💾 API":"ok",
+    <p>const personalWeb = [{
     </p>
-    <p>
-      "💼 LinkedIn":"<a
+    <p>   "🙋‍♂️ intro: "hi there, my name is Albert Carreras",
+    </p>
+    <p>   "🗿 role": "Full-Stack developer and Engineering Manager",
+    </p>
+    <p>   "👨‍💻 job": "Currently working for my own company: <a
+      href="https://triskale.com"
+      target="_blank"
+      >Triskale</a
+    > with <a
+    href="https://homero.dev/"
+    target="_blank"
+    >Homero</a
+  >",
+    </p>
+    <p>   "🌴 other": "I also made a AI journaling app: <a
+      href="https://goseren.com"
+      target="_blank"
+      >Seren: AI Chat Journal</a
+    >",
+    </p>
+    <p>},</p>
+    <br/>
+    <p>{
+    </p>
+    <p>   "💾 API": "ok",
+    </p>
+    <p>   "💼 LinkedIn": "<a
         href="https://www.linkedin.com/in/albcarreras/"
         target="_blank"
         noopener
@@ -52,17 +96,15 @@
         >https://www.linkedin.com/in/albcarreras/</a
       >",
     </p>
-    <p>
-      "📔 Seren":"<a
+    <p>   "📔 Seren": "<a
         href="https://goseren.com"
         target="_blank"
         >https://goseren.com</a
       >",
     </p>
-    <p>
-      "📧 Say hi": <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#98;&#111;&#114;&#101;&#100;&#46;&#99;&#97;&#116;">&#109;&#101;&#64;&#98;&#111;&#114;&#101;&#100;&#46;&#99;&#97;&#116;</a>
+    <p>   "📧 Say hi": <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#98;&#111;&#114;&#101;&#100;&#46;&#99;&#97;&#116;">&#109;&#101;&#64;&#98;&#111;&#114;&#101;&#100;&#46;&#99;&#97;&#116;</a>
     </p>
-    <p>}</p>
+    <p>}];</p>
   </body>
 </html>
 <script type="text/javascript" src="cursor.js"></script>
